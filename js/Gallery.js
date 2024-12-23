@@ -85,3 +85,11 @@ console.log(galleryList);
 galleryList.insertAdjacentHTML('afterbegin', createMarkup(images));
 
 
+const handleClick = event => {
+  event.preventDefault();
+  const bigİmg = event.target.dataset;
+
+  console.log(bigİmg);
+}
+
+galleryList.addEventListener('click', handleClick);

@@ -87,9 +87,16 @@ galleryList.insertAdjacentHTML('afterbegin', createMarkup(images));
 
 const handleClick = event => {
   event.preventDefault();
-  const bigİmg = event.target.dataset;
+  const bigİmg = event.target.dataset.source;
+
+  const instance = basicLightbox.create(`
+    <img src="${bigİmg}" width="1112" height="640">
+`)
+
+  instance.show()
 
   console.log(bigİmg);
 }
 
 galleryList.addEventListener('click', handleClick);
+

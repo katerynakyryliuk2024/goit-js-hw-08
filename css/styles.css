@@ -15,7 +15,9 @@ img {
      height: 200px;
 }
 
-.modal{
-    padding: 100px;
-    background-color: white;
+
+.gallery.gallery-item:hover,
+.gallery.gallery-item:focus {
+    width: 376px;
+     height: 208px;
 }

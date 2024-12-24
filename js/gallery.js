@@ -98,7 +98,11 @@ const handleClick=event=> {
 
     const bigİmg=event.target.dataset.source;
 
-    const instance=basicLightbox.create(` <img src="${bigİmg}" width="1112" height="640" > `) instance.show() console.log(bigİmg);
+    const instance = basicLightbox.create(` <img src="${bigİmg}" width="1112" height="640" > `)
+    
+    instance.show()
+    
+    console.log(bigİmg);
 }
 
 galleryList.addEventListener('click', handleClick);

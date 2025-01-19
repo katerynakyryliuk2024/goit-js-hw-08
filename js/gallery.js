@@ -80,14 +80,12 @@ const createMarkup=arr=> {
         alt="${image.description}"
         /> </a> </li>`).join('');
 }
-
 console.log(createMarkup(images));
 
 const galleryList=document.querySelector('.gallery');
 console.log(galleryList);
 
 galleryList.insertAdjacentHTML('afterbegin', createMarkup(images));
-
 
 const handleClick=event=> {
     event.preventDefault();
